@@ -15,6 +15,7 @@ In HTML create an element and add the class `flag` along with the name of the co
 <span class="flag name-of-country"></span>
 ```
 
+Checkout the [demo page](./demo/) to see all the flags in one place.
 
 ## List of flags
 
