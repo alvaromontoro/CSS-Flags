@@ -1,0 +1,2199 @@
+.flag {
+  position: relative;
+  display: inline-grid;
+  height: 1em;
+  width: auto;
+  vertical-align: top;
+}
+
+/* TODO */
+.flag.afghanistan {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#000 33.33%, #d32011 0 66.66%, #007a36 0);
+}
+
+/* TOOD? */
+.flag.albania {
+  aspect-ratio: 7 / 5;
+  background: #da291c;
+}
+
+.flag.algeria {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #063 50%, #fff 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    aspect-ratio: 1;
+    height: 40%;
+    border-radius: 50%;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    box-shadow: -0.06em 0 0 0.05em #D21034;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 24%;
+    background: #D21034;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    clip-path: polygon(0% 19%, 38% 31%, 61% 0%, 61% 38%, 100% 50%, 61% 62%, 61% 100%, 38% 69%, 0% 81%, 23% 50%);
+  }
+}
+
+.flag.andorra {
+  aspect-ratio: 10 / 7;
+  background: linear-gradient(90deg, #10069f 33.33%, #fedd00 0 66.66%, #d50032 0);
+}
+
+/* TO IMPROVE! */
+.flag.angola {
+  aspect-ratio: 3 / 2;
+  background: 
+    linear-gradient(90deg, #cd022b 0 63.33%, #fc0 0 67.5%, #cd022b 0) 50% 50% / 100% 1px,
+    linear-gradient(95deg, #cd022b calc(52% - 1px), #0000 52%) 0 0 / 100% 50%,
+    linear-gradient(125deg, #000 calc(41% - 1px), #0000 41%) 0 100% / 100% 50%,
+    linear-gradient(#000 0 0) 58.25% 75% / 3% 10%,
+    linear-gradient(-142deg, #0000 calc(37.5% - 1px), #000 37.5% 42%, #0000 0) 0 100% / 100% 50%,
+    linear-gradient(-145deg, #0000 40%, #000 0 calc(43% - 1px), #0000 43%) 0 100% / 100% 50%,
+    radial-gradient(farthest-side circle at 50% 100%, #cd022b calc(26.75% - 1px), #fc0 26.75% calc(32% - 1px), #0000 32% 35%, #cf022b calc(35% + 1px)) 0 0 / 100% 50%,
+    radial-gradient(farthest-side circle at 50% 0%, #000 calc(26.75% - 1px), #fc0 26.75% calc(32% - 1px), #0000 32% 35%, #000 calc(35% + 1px)) 0 100% / 100% 50%,
+    repeating-conic-gradient(from -5.625deg, #fc0 0 11.25deg, #0000 0 22.5deg),
+    linear-gradient(#cd022b 50%, #000 0);
+  background-repeat: no-repeat;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fc0;
+    top: 40.25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34%;
+    height: 9%;
+    top: 46.5%;
+    left: 44.5%;
+    transform: rotate(37deg);
+    transform-origin: 0 0;
+    outline: 1px dashed #ff0;
+    border-radius: 0 0 0 3em;
+    background:
+      linear-gradient(#000 0 0) 76.5% 0 / 1% 100%,
+      linear-gradient(#000 0 0) 45% 47% / 57% 5%,
+      radial-gradient(circle at 81% 40%, #000 0.0033em, #0000 0),
+      radial-gradient(circle at 87.25% 41.75%, #000 0.0033em, #0000 0),
+      radial-gradient(circle at 93.5% 43.5%, #000 0.0033em, #0000 0),
+      linear-gradient(#fc0 0 0) 0 0 / 15% 100%,
+      conic-gradient(at 155% 0, #0000 263.25deg, #fc0 0) 0 100% / 80% 66%,
+      radial-gradient(110% 100% at 0% 100%, #0000 99.99%, #000 0) 100% 55% / 15% 50%,
+      radial-gradient(50% 50% at 60% 40%, #fc0 99%, #0000) 100% 66% / 15% 40%,
+      conic-gradient(at 280% 0, #0000 260deg, #fc0 0) 90% 55% / 15% 50%,
+      conic-gradient(at -180% 0, #fc0 100deg, #0000 0) 100% 55% / 15% 50%
+      ;
+    background-repeat: no-repeat;
+    mask: radial-gradient(16.5% 38% at 17% -5%, #0000 99.99%, #000);
+  }
+}
+
+.flag.antigua-y-barbuda {
+  aspect-ratio: 3 / 2;
+  background:
+    linear-gradient(#0000 calc(18 / 46 * 100%), #0072c6 0 calc(28 / 46 * 100%), #fff 0),
+    #000;
+  
+  /* this could be done with gradients */
+  &::before {
+    content: "";
+    position: absolute;
+    width: 43.5%;
+    left: 50%;
+    bottom: calc(28 / 46 * 100%);
+    transform: translate(-50%);
+    aspect-ratio: 2;
+    background: #fcd116;
+    clip-path: polygon(0% 100%, 26% 90%, 4% 62%, 30% 72%, 15% 29%, 36% 58%, 31% 8%, 45% 51%, 50% 0%, 55% 51%, 69% 8%, 64% 58%, 85% 29%, 70% 72%, 96% 62%, 74% 90%, 100% 100%);
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #ce1126;
+    clip-path: polygon(0 0, 50% 100%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+/* TODO? */
+.flag.argentina {
+  aspect-ratio: 14 / 9;
+  background: linear-gradient(#74acdf 33.33%, #fff 0 66.66%, #74acdf 0)
+}
+
+.flag.armenia {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#d90012 33.33%, #0033a0 0 66.66%, #f2a800 0)
+}
+
+/* TODO */
+.flag.australia {
+  aspect-ratio: 2 / 1;
+  background: #00008B;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    background:
+      linear-gradient(#C8102E 0 0) 50% 0 / 10% 100%, 
+      linear-gradient(#C8102E 0 0) 0 50% / 100% 20%, 
+      linear-gradient(#fff 0 0) 50% 0 / 16.66% 100%, 
+      linear-gradient(#fff 0 0) 0 50% / 100% 33.33%, 
+      linear-gradient(to top right, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 0 / 50% 50%,
+      linear-gradient(to bottom right, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 0 / 50% 50%,
+      linear-gradient(to top left, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 100% / 50% 50%,
+      linear-gradient(to bottom left, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 100% / 50% 50%,
+      linear-gradient(to top right, #0000 44.5%, #fff 0 55.5%, #0000 0),
+      linear-gradient(to top left, #0000 44.5%, #fff 0 55.5%, #0000 0),
+      #00008B
+      ;
+    background-repeat: no-repeat;
+  }
+}
+
+.flag.austria {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#c8102e 33.33%, #fff 0 66.66%, #c8102e 0);
+}
+
+/* TODO */
+.flag.azerbaijan {
+  aspect-ratio: 2 / 1;
+  background: 
+    radial-gradient(closest-side circle at 55% 50%, #fff 8.333%, #fff0 0),
+    radial-gradient(closest-side circle at 47.5% 50%, #ef3340 25%, #fff0 0),
+    radial-gradient(closest-side circle at 46% 50%, #fff 30%, #fff0 0),
+    linear-gradient(#00b5e2 33.33%, #ef3340 0 66.66%, #509e2f 0);
+}
+
+.flag.bahamas {
+  aspect-ratio: 2 / 1;
+  background:
+    conic-gradient(at 43.3% 50%, #0000 240deg, #000 0 300deg, #0000 0),
+    linear-gradient(#00778b 33.33%, #ffc72c 0 66.66%, #00778b 0);
+}
+
+.flag.bahrain {
+  aspect-ratio: 5 / 3;
+  background: conic-gradient(from 249deg at 40% 50%, #fff 42deg, #DA291C 0) 0 50% / 100% 20%;
+  background: #da291c;
+  position: relative;
+  
+  /* makes it look nicer than the conic gradient */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: white;
+    clip-path: polygon(0 0, 25% 0, 40% 10%, 25% 20%, 40% 30%, 25% 40%, 40% 50%, 25% 60%, 40% 70%, 25% 80%, 40% 90%, 25% 100%, 0 100%);
+  }
+}
+
+.flag.bangladesh {
+  aspect-ratio: 5 / 3;
+  background: radial-gradient(closest-side circle at 45% 50%, #f42a41 calc(66.66% - 1px), #006a4e 66.66%);
+}
+
+/* TODO? */
+.flag.barbados {
+  aspect-ratio: 3 / 2;
+  background: 
+    linear-gradient(90deg, #00267f 33.33%, #ffc726 0 66.66%, #00267f 0)
+    ;
+  background-repeat: no-repeat;
+}
+
+/* TODO? */
+.flag.belarus {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#d22730 66.66%, #009739 0);
+}
+
+.flag.belgium {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #000 33.33%, #fdda24 0 66.66%, #ef3340 0);
+}
+
+/* TODO: coat of arms is tough with CSS :( */
+.flag.belize {
+  aspect-ratio: 5 / 3;
+  background: 
+    radial-gradient(closest-side circle, #fff calc(60% - 1px), #fff0 60%),
+    linear-gradient(#d90f19 10%, #171696 0 90%, #d90f19 0);
+}
+
+.flag.benin {
+  aspect-ratio: 3 / 2;
+  background: conic-gradient(at 40% 50%, #fcd20f 25%, #e90929 0 50%, #008850 0);
+}
+
+/* TODO: dragon is tough in CSS */
+.flag.bhutan {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(to bottom right, #fc3 50%, #ff4e12 0);
+}
+
+.flag.bolivia {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#da291c 33.33%, #f4e400 0 66.66%, #007a33 0);
+}
+
+/* TODO */
+.flag.bosnia-herzegovina {
+  aspect-ratio: 2 / 1;
+  background:
+    conic-gradient(at calc(306 / 400 * 100%) 100%, #001489 315deg, #ffcd00 0);
+}
+
+.flag.botswana {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#6da9d2 37.5%, #fff 0 42.5%, #000 0 57.5%, #fff 0 62.5%, #6da9d2 0)
+}
+
+/* TODO */
+.flag.brazil {
+  aspect-ratio: 10 / 7;
+  background:
+   linear-gradient(32.5deg, #009440 30.1%, #0000 0 69.9%, #009440 0), 
+   linear-gradient(-32.5deg, #009440 30.1%, #0000 0 69.9%, #009440 0),
+    #ffcb00;
+  place-items: center;
+  
+  &::before {
+    content: "";
+    width: 35%;
+    aspect-ratio: 1;
+    background: 
+      radial-gradient(125% 110% at 24% 120%, #0000 calc(77% - 1px), #fff 77% calc(83% - 1px), #0000 83%)
+      #302681;
+    border-radius: 50%;
+  }
+}
+
+.flag.brunei {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(191.75deg, #f7e017 calc(34.5% - 1px), #fff 34.5% calc(51% - 1px), #000 51% calc(65.5% - 1px), #f7e017 65.5%);
+}
+
+.flag.bulgaria {
+  aspect-ratio: 5 / 3;
+  background: linear-gradient(#fff 33.33%, #090 0 66.66%, #c00 0);
+}
+
+/* TODO */
+.flag.burkina-faso {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#ef2b2d 50%, #009e49 0);
+  place-items: center;
+  
+  &::before {
+    content: "";
+    width: 22.22%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fcd116;
+    margin-top: -2.5%;
+  }
+}
+
+/* TODO */
+.flag.burundi {
+  --pos: calc(17 / 30 * 100%);
+  --stop1: calc(46% - 1px);
+  --stop2: calc(54% - 1px);
+  aspect-ratio: 5 / 3;
+  background:
+   linear-gradient(to bottom right, #0000 var(--stop1), #fff 46% var(--stop2), #0000 54%), 
+   linear-gradient(to bottom left, #0000 var(--stop1), #fff 46% var(--stop2), #0000 54%), 
+   radial-gradient(closest-side circle, #fff calc(var(--pos) - 1px), #0000 var(--pos)),
+   repeating-conic-gradient(from -63deg, #c8102e 0 35%, #43b02a 0 50%);
+}
+
+.flag.cambodia {
+  aspect-ratio: 25 / 16;
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#032ea1 25%, #e00025 0 75%, #032ea1 0);
+}
+
+.flag.cameroon {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #007a5e 33.33%, #ce1126 0 66.66%, #fcd116 0);
+  place-items: center;
+  
+  &::before {
+    content: "";
+    width: 25%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fcd116;
+  }
+}
+
+.flag.canada {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(90deg, #d52b1e 25%, #fff 0 75%, #d52b1e 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    clip-path: polygon( 49.04% 92.11%, 49.55% 73.28%, 48.69% 72.07%, 39.41% 75.43%, 40.80% 67.89%, 30.59% 51.33%, 33.38% 48.83%, 31.23% 35.74%, 37.44% 38.44%, 38.75% 32.19%, 43.30% 41.84%, 43.93% 42.11%, 44.36% 40.98%, 42.19% 18.63%, 46.23% 23.09%, 49.98% 8.55%, 53.77% 23.16%, 57.71% 18.63%, 55.66% 40.55%, 55.96% 42.03%, 56.72% 41.99%, 61.23% 32.27%, 62.52% 38.32%, 68.77% 35.70%, 66.56% 48.87%, 69.32% 51.33%, 59.24% 67.85%, 60.59% 75.47%, 51.27% 72.19%, 50.47% 73.12%, 50.98% 92.34%);
+    background: #d52b1e
+  }
+}
+
+/* TODO? */
+.flag.cape-verde {
+  aspect-ratio: 17 / 10;
+  background: 
+    linear-gradient(#003893 50%, #fff 0 58.33%, #cf2027 0 66.66%, #fff 0 75%, #003893 0)
+}
+
+.flag.central-african-republic {
+  aspect-ratio: 3 / 2;
+  background: 
+    linear-gradient(#d21034 0 0) 50% 0 / 16.66% 100% no-repeat,
+    linear-gradient(#003082 25%, #fff 0 50%, #289728 0 75%, #ffce00 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 2.25%;
+    left: 10%;
+    width: 15%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+  }
+}
+
+.flag.chad {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #00205b 33.33%, #ffcd00 0 66.66%, #c8102e 0);
+}
+
+.flag.chile {
+  aspect-ratio: 3 / 2;
+  background: conic-gradient(at 33.33% 50%, #fff 25%, #d52b1e 0 75%, #0039a6 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    top: 25%;
+    left: 16.66%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* TODO */
+.flag.china {
+  aspect-ratio: 3 / 2;
+  background: #ee1c25;
+}
+
+.flag.colombia {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#ffcd00 50%, #003087 0 75%, #c8102e 0);
+}
+
+/* TODO */
+.flag.comoros {
+  aspect-ratio: 5 / 3;
+  background: 
+    conic-gradient(#f000 239deg, #009639 0 301deg, #0000 0),
+    linear-gradient(#ffd100 25%, #fff 0 50%, #ef3340 0 75%, #003da5 0);
+}
+
+.flag.costa-rica {
+  aspect-ratio: 5 / 3;
+  background: linear-gradient(#001489 16.66%, #fff 0 33.33%, #fa291c 0 66.66%, #fff 0 83.33%, #001489 0);
+}
+
+/* TODO? */
+.flag.croatia {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#f00 33%, #fff 0 66.66%, #171796 0);
+}
+
+.flag.cuba {
+  aspect-ratio: 2 / 1;
+  background:
+    conic-gradient(at calc(13 / 30 * 100%) 50%, #0000 240deg, #cc0d0d 0 300deg, #0000 0),
+    repeating-linear-gradient(#002590 0 20%, #fff 0 40%);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    height: 30%;
+    top: 48%;
+    left: 15%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* TODO? :S */
+.flag.cyprus {
+  aspect-ratio: 3 / 2;
+  background: #fff;
+}
+
+.flag.czech-republic {
+  aspect-ratio: 3 / 2;
+  background: conic-gradient(#fff 25%, #d7141a 0 65.65%, #11457e 0 84.35%, #fff 0) 50% 0 / 100%;
+  background: conic-gradient(from 90deg, #d7141a 40.65%, #11457e 0 59.35%, #fff 0);
+}
+
+.flag.denmark {
+  aspect-ratio: 37 / 28;
+  background:
+    linear-gradient(#fff 0 0) 50% 50% / 100% calc(4 / 28 * 100%),
+    linear-gradient(#fff 0 0) calc(14 / 37 * 100%) 50% / calc(4 / 37 * 100%) 100%,
+    #c8102e; #f15060;
+  background-repeat: no-repeat;
+}
+
+.flag.djibouti {
+  aspect-ratio: 3 / 2;
+  background: conic-gradient(at 57.75% 50%, #6AB2E7 25%, #12AD2B 0 240deg, #fff 0 300deg, #6AB2E7 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 18%;
+    top: 50%;
+    left: 22%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #D7141A;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* TODO? */
+.flag.dominica {
+  aspect-ratio: 2 / 1;
+  background:
+    radial-gradient(closest-side circle, #d50032 calc(50% - 1px), #0000 50%),
+    linear-gradient(#ffcd00 33.33%, #000 0 66.66%, #fff 0) 50% 50% / 100% 0.25em,
+    linear-gradient(90deg, #ffcd00 33.33%, #000 0 66.66%, #fff 0) 50% 50% / 0.25em 100%,
+    #046a38
+    ;
+  background-repeat: no-repeat;
+}
+
+.flag.dominican-republic {
+  aspect-ratio: 3 / 2;
+  background:
+    linear-gradient(#fff 0 0) 50% 50% / 100% 0.2em,
+    linear-gradient(#fff 0 0) 50% 50% / 0.2em 100%,
+    repeating-conic-gradient(#ce1126 0 25%, #002d62 0 50%);
+    ;
+  background-repeat: no-repeat;
+}
+
+.flag.democratic-republic-congo {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(-31deg, #007fff calc(41.5% - 1px), #f7d618 41.5% calc(44.5% - 1px), #ce1021 44.5% calc(55.5% - 1px), #f7d618 55.5% calc(58.5% - 1px), #007fff 58.5%);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 27.25%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #f7d618;
+    top: 7.5%;
+    left: 5%;
+  }
+}
+
+.flag.east-timor {
+  aspect-ratio: 2 / 1;
+  background: 
+    conic-gradient(at 33.33% 50%, #0000 64.75%, #000 0 85.25%, #0000 0),
+    conic-gradient(#0000 67.6%, #ffc72c 0 82.4%, #0000 0),
+    #da291c;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    top: 48.75%;
+    left: 10.75%;
+    transform: translate(-50%, -50%) rotate(-24deg);
+  }
+}
+
+.flag.ecuador {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#ffdd00 50%, #034ea2 0 75%, #ed1c24 0);
+}
+
+.flag.egypt {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#ce1126 33.33%, #fff 0 66.66%, #000 0);
+}
+
+.flag.el-salvador {
+  aspect-ratio: 335 / 189;
+  background: linear-gradient(#0f45d2 33.33%, #fff 0 66.66%, #0f45d2 0);
+}
+
+.flag.equatorial-guinea {
+  aspect-ratio: 3 / 2;
+  background: 
+    conic-gradient(at 25% 50%, #0000 216.75deg, #0073ce 0 323.25deg, #0000 0),
+    linear-gradient(#3e9a00 33.33%, #fff 0 66.66%, #e32118 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background: #0073ce;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+}
+
+/* TODO? */
+.flag.eritrea {
+  aspect-ratio: 2 / 1;
+  background:
+    linear-gradient(to top right, #0000 calc(50% - 1px), #0BAC24 50%) 0 0 / 100% 50%,
+    linear-gradient(to bottom right, #0000 calc(50% - 1px), #3C8BDC 50%) 0 100% / 100% 50%,
+    #EB0433
+    ;
+  background-repeat: no-repeat;
+}
+
+.flag.estonia {
+  aspect-ratio: 11 / 7;
+  background: linear-gradient(#0072ce 33.33%, #000 0 66.66%, #fff 0);
+}
+
+/* TODO */
+.flag.eswatini {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#3e5eb9 20%, #ffd900 0 25%, #b10c0c 0 75%, #ffd900 0 80%, #3e5eb9 0);
+}
+
+/* TODO */
+.flag.ethiopia {
+  aspect-ratio: 2 / 1;
+  background: 
+    radial-gradient(closest-side circle, #0845B1 calc(66.66% - 1px), #0000 66.66%),
+    linear-gradient(#019444 33.33%, #FCDD0A 0 66.66%, #DA111A 0);
+}
+
+/* TODO? */
+.flag.fiji {
+  aspect-ratio: 2 / 1;
+  background: #62b5e5;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    background:
+      linear-gradient(#C8102E 0 0) 50% 0 / 10% 100%, 
+      linear-gradient(#C8102E 0 0) 0 50% / 100% 20%, 
+      linear-gradient(#fff 0 0) 50% 0 / 16.66% 100%, 
+      linear-gradient(#fff 0 0) 0 50% / 100% 33.33%, 
+      linear-gradient(to top right, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 0 / 50% 50%,
+      linear-gradient(to bottom right, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 0 / 50% 50%,
+      linear-gradient(to top left, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 100% / 50% 50%,
+      linear-gradient(to bottom left, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 100% / 50% 50%,
+      linear-gradient(to top right, #0000 44.5%, #fff 0 55.5%, #0000 0),
+      linear-gradient(to top left, #0000 44.5%, #fff 0 55.5%, #0000 0),
+      #00008B
+      ;
+    background-repeat: no-repeat;
+  }
+}
+
+.flag.finland {
+  aspect-ratio: 18 / 11;
+  background:
+    linear-gradient(#002F6C 0 0) 0.454em 0 / 16.666% 100% no-repeat,
+    linear-gradient(#002F6C 0 0) 0 50% / 100% 27.27% no-repeat,
+    #fff;
+}
+
+.flag.france {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #0055a4 33.33%, #fff 0 66.66%, #ef4135 0);
+}
+
+.flag.gabon {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#009e60 33.33%, #fcd116 0 66.66%, #3a75c4 0);
+}
+
+.flag.gambia {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#ce1126 33.33%, #fff 0 38.88%, #0c1c8c 0 61.11%,  #fff 0 66.66%, #3a7728 0);
+}
+
+/* TODO */
+.flag.georgia {
+  aspect-ratio: 3 / 2;
+  background:
+    linear-gradient(#f00 0 0) 0 50% / 100% 20%,
+    linear-gradient(#f00 0 0) 50% 0 / 13.333% 100%,
+    #fff;
+  background-repeat: no-repeat;
+}
+
+.flag.germany {
+  aspect-ratio: 5 / 3;
+  background: linear-gradient(#000 33.33%, #f00 0 66.66%, #fc0 0);
+}
+
+.flag.ghana {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#CF0921 33.33%, #FCD20F 0 66.66%, #006B3D 0);
+  place-items: center;
+  
+  &::before {
+    content: "";
+    height: 33.33%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #000;
+  }
+}
+
+.flag.greece {
+  --blue: #005bae;
+  --blue: #004C98;
+  --blue: #2175d8;
+  aspect-ratio: 3 / 2;
+  background:
+    linear-gradient(90deg, #0000 40%, #fff 0 60%, #0000 0)  0 0 / calc(5em / 9) calc(5em / 9),
+    linear-gradient(#0000 40%, #fff 0 60%, #0000 0)  0 0 / calc(5em / 9) calc(5em / 9),
+    linear-gradient(var(--blue) 0 0) 0 0 / calc(5em / 9) calc(5em / 9.1),
+    repeating-linear-gradient(var(--blue) 0 calc(100% / 9), #fff 0 calc(200% / 9));
+  background-repeat: no-repeat;
+}
+
+.flag.greece {
+  aspect-ratio: 3 / 2;
+  background:
+    repeating-linear-gradient(90deg, #0000 0 40%, #fff 0 60%)  0 0 / calc(5em / 9) calc(5em / 8.5),
+    repeating-linear-gradient(#2175d8 0 40%, #fff 0 60%)  0 0 / calc(5em / 9) calc(5em / 9),
+    repeating-linear-gradient(#2175d8 0 calc(100% / 9), #fff 0 calc(200% / 9));
+  background-repeat: no-repeat;
+}
+
+/* todo */
+.flag.grenada {
+  aspect-ratio: 5 / 3;
+  box-shadow: inset 0 0 0 0.14em #ce1126;
+  background:
+    radial-gradient(circle, #ce1126 calc(12.5% - 1px), #0000 12.5%),
+   conic-gradient(#fcd116 62.5deg, #007a5e 0 117.5deg, #fcd116 0 242.5deg, #007a5e 0 297.5deg, #fcd116 0)
+    ;
+}
+
+.flag.guatemala {
+  aspect-ratio: 8 / 5;
+  background: linear-gradient(90deg, #4997D0 33.33%, #fff 0 66.66%, #4997D0 0);
+}
+
+.flag.guinea {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #CE1126 33.33%, #FCD116 0 66.66%, #009460 0);
+}
+
+.flag.guinea-bissau {
+  aspect-ratio: 2 / 1;
+  background: conic-gradient(at 33.33% 50%, #FCD116 25%, #009E49 0 50%, #CE1126 0);
+  
+  &::before {
+    content: "";
+    width: 16.66%;
+    left: 16.66%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #000;
+  }
+}
+
+.flag.guyana {
+  aspect-ratio: 5 / 3;
+  background:
+    linear-gradient(to top right, #BE1E2D calc(46% - 1px), #0000 46%) 0 0 / 50% 50%,
+    linear-gradient(to bottom right, #BE1E2D calc(46% - 1px), #0000 46%) 0 100% / 50% 50%,
+    linear-gradient(to top right, #000 calc(50% - 1px), #0000 50%) 0 0 / 50% 50%,
+    linear-gradient(to bottom right, #000 calc(50% - 1px), #0000 50%) 0 100% / 50% 50%,
+    linear-gradient(to top right, #FFC20E calc(46.5% - 1px), #0000 46.5%) 0 0 / 100% 50%,
+    linear-gradient(to bottom right, #FFC20E calc(46.5% - 1px), #0000 46.5%) 0 100% / 100% 50%,
+    linear-gradient(to top right, #fff 50%, #0000 calc(50% + 1px)) 0 0 / 100% 50%,
+    linear-gradient(to bottom right, #fff 50%, #0000 calc(50% + 1px)) 0 100% / 100% 50%,
+    linear-gradient(90deg, #BE1E2D 46%, #000 0 50%, #FFC20E 0 93%, #fff 0) 50% 50% / 100% 1px,
+    #2A936A
+    ;
+  background-repeat: no-repeat;
+}
+
+/* TODO? */
+.flag.haiti {
+  aspect-ratio: 5 / 3;
+  background: 
+    linear-gradient(#fff 0 0) 50% 50% / 19% 26% no-repeat,
+    linear-gradient(#00209f 50%, #d21034 0);
+}
+
+/* TODO */
+.flag.honduras {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#00bce4 33.33%, #fff 0 66.66%, #00bce4 0);
+}
+
+.flag.hungary {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#CE2939 33.33%, #fff 0 66.66%, #477050 0);
+}
+
+.flag.iceland {
+  aspect-ratio: 25 / 18;
+  background:
+    linear-gradient(#DC1E35 0 0) 0 50% / 100% 0.111em,
+    linear-gradient(#DC1E35 0 0) 0.444em 50% / 0.111em 100%,
+    linear-gradient(#fff 0 0) 0 50% / 100% 0.222em,
+    linear-gradient(#fff 0 0) 0.388em 50% / 0.222em 100%,
+    #02529C
+    ;
+  background-repeat: no-repeat;
+}
+
+/* TODO */
+.flag.india {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#FF671F 33.33%, #fff 0 66.66%, #046A38 0);
+}
+
+.flag.indonesia {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#f00 50%, #fff 0);
+}
+
+.flag.iran {
+  aspect-ratio: 7 / 4;
+  background: 
+    radial-gradient(circle at 50.75% 37.5%, #fff calc(1.75% - 1px), #0000 1.75%),
+    radial-gradient(circle at 49.25% 37.5%, #fff calc(1.75% - 1px), #0000 1.75%),
+    radial-gradient(circle at 49.25% 38.5%, #da0000 calc(1.75% - 1px), #0000 1.75%),
+    radial-gradient(circle at 50.75% 38.5%, #da0000 calc(1.75% - 1px), #0000 1.75%),
+    radial-gradient(circle at 51% 39.5%, #fff calc(1.75% - 1px), #0000 1.75%),
+    radial-gradient(circle at 49% 39.5%, #fff calc(1.75% - 1px), #0000 1.75%),
+    
+    conic-gradient(at 50% 450%, #da0000 1deg, #0000 1.1deg 358.9deg, #da0000 359deg) 50% 50% / 100% 20% no-repeat,
+    conic-gradient(at 50% 100%, #da0000 30deg, #0000 30.1deg 329.9deg, #da0000 330deg) 50% 61.5% / 100% 3% no-repeat,
+    
+    radial-gradient(5.9% 11.7% at 50% 50.5%, #fff calc(100% - 1px), #0000),
+    radial-gradient(7.2% 10.5% at 50% 50%, #da0000 calc(100% - 1px), #0000),
+    
+    repeating-linear-gradient(90deg, #fff 0 0.48%, #0000 0 1.95%, #fff 0 2.4%, #0000 0 3.7%, #fff 0 4.2%, #0000 0 4.64%, #fff 0 5.18%, #0000 0 9.12%) 50% 30.5% / 97.5% 2% no-repeat,
+    repeating-linear-gradient(90deg, #fff 0 0.48%, #0000 0 1.95%, #fff 0 2.4%, #0000 0 3.7%, #fff 0 4.2%, #0000 0 4.64%, #fff 0 5.18%, #0000 0 9.12%) 50% 71.6% / 97.5% 2% no-repeat,
+    
+    repeating-linear-gradient(90deg, #0000 0 0.93%, #fff 0 1.38%, #0000 0 2%, #fff 0 4.2%, #0000 0 4.64%, #fff 0 6%, #0000 0 6.46%, #fff 0 8.5%, #0000 0 9.12%) 50% 31.4% / 97.5% 0.8% no-repeat,
+    repeating-linear-gradient(90deg, #0000 0 0.93%, #fff 0 1.38%, #0000 0 2%, #fff 0 4.2%, #0000 0 4.64%, #fff 0 6%, #0000 0 6.46%, #fff 0 8.5%, #0000 0 9.12%) 50% 72.05% / 97.5% 0.8% no-repeat,
+    
+    repeating-linear-gradient(90deg, #fff 0 2.4%, #0000 0 2.86%, #fff 0 4.2%, #0000 0 4.64%, #fff 0 6.7%, #0000 0 9.12%) 50% 29.8% / 97.5% 0.8% no-repeat,
+    repeating-linear-gradient(90deg, #fff 0 2.4%, #0000 0 2.86%, #fff 0 4.2%, #0000 0 4.64%, #fff 0 6.7%, #0000 0 9.12%) 50% 70.18% / 97.5% 0.8% no-repeat,
+    
+    repeating-linear-gradient(90deg, #0000 0 6.4%, #fff 0 6.86%, #0000 0 7.32%, #fff 0 7.78%, #0000 0 8.24%, #fff 0 8.7%, #0000 0 9.12%) 50% 28.95% / 97.5% 4.15% no-repeat,
+    repeating-linear-gradient(90deg, #0000 0 6.4%, #fff 0 6.86%, #0000 0 7.32%, #fff 0 7.78%, #0000 0 8.24%, #fff 0 8.7%, #0000 0 9.12%) 50% 71.05% / 97.5% 4.15% no-repeat,
+    
+    repeating-linear-gradient(90deg, #fff 0 6%, #0000 0 9.12%) 50% 28% / 97.5% 0.95% no-repeat,
+    repeating-linear-gradient(90deg, #fff 0 6%, #0000 0 9.12%) 50% 68.75% / 97.5% 0.95% no-repeat,
+    repeating-linear-gradient(90deg, #fff 0 4.15%, #0000 0 4.56%) 50% 50% / 97.5% 35% no-repeat,
+    linear-gradient(#239f40 33.33%, #fff 0 66.66%, #da0000 0);
+  
+  &::before, &::after {
+    content:"";
+    position: absolute;
+    top: 35.35%;
+    left: 39.175%;
+    width: 14.4%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #0000;
+    box-shadow: 0.032em 0.017em 0 -0.0125em #da0000
+  }
+  
+  &::after {
+    left: 46.425%;
+    box-shadow: -0.032em 0.017em 0 -0.0125em #da0000
+  }
+}
+
+/* TODO */
+.flag.iraq {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#cd1125 33.33%, #fff 0 66.66%, #000 0);
+}
+
+.flag.ireland {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(90deg, #169B62 33.33%, #fff 0 66.66%, #FF883E 0);
+}
+
+.flag.israel {
+  aspect-ratio: 11 / 8;
+  background:
+    linear-gradient(-60deg, #0000 17%, #0038b8 calc(17% + 1px) calc(21.5% - 1px), #0000 21.5%) 0 42% / 50% 32.5%,
+    linear-gradient(60deg, #0000 17%, #0038b8 calc(17% + 1px) calc(21.5% - 1px), #0000 21.5%) 100% 42% / 50% 32.5%,
+    linear-gradient(#0038b8 0 0) 50% 59.33% / 23% 3.5%,
+    linear-gradient(60deg, #0000 78.5%, #0038b8 calc(78.5% + 1px) calc(83% - 1px), #0000 83%) 0 58% / 50% 32.5%,
+    linear-gradient(-60deg, #0000 78.5%, #0038b8 calc(78.5% + 1px) calc(83% - 1px), #0000 83%) 100% 58% / 50% 32.5%,
+    linear-gradient(#0038b8 0 0) 50% 40.6% / 23% 3.5%,
+    linear-gradient(#fff 9.375%, #0038b8 0 25%, #fff 0 75%, #0038b8 0 90.625%, #fff 0);
+  background-repeat: no-repeat;
+}
+
+.flag.italy {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #008C45 33.33%, #fff 0 66.66%, #CD212A 0);
+}
+
+.flag.ivory-coast {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #FF8200 33.33%, #fff 0 66.66%, #009A44 0);
+}
+
+.flag.jamaica {
+  --pos: calc(17 / 30 * 100%);
+  --stop1: calc(50% - 0.0833em);
+  --stop2: calc(50% + 0.0833em);
+  aspect-ratio: 2 / 1;
+  background:
+   linear-gradient(to bottom right, #0000 var(--stop1), #ffb81c 0 var(--stop2), #0000 0), 
+   linear-gradient(to bottom left, #0000 var(--stop1), #ffb81c 0 var(--stop2), #0000 0), 
+   repeating-conic-gradient(from -63deg, #007749 0 35%, #000 0 50%)
+    ;
+}
+
+.flag.japan {
+  aspect-ratio: 3 / 2;
+  background: radial-gradient(closest-side circle, #bc002d calc(60% - 1px), #fff 60%)
+}
+
+/* TODO */
+.flag.jordan {
+  aspect-ratio: 2 / 1;
+  background: 
+    conic-gradient(#0000 243.43deg, #ce1126 0 296.56deg, #0000 0),
+    linear-gradient(#000 33.33%, #fff 0 66.66%, #007a3d 0);
+}
+
+/* TODO */
+.flag.kazakhstan {
+  aspect-ratio: 2 / 1;
+  background: #00ABC2;
+}
+
+/* TODO */
+.flag.kenya {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#000 30%, #fff 0 35%, #922529 0 65%, #fff 0 70%, #008C51 0);
+}
+
+/* TODO? */
+.flag.kiribati {
+  aspect-ratio: 2 / 1;
+  background: #c81010;
+}
+
+.flag.kuwait {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#007a3d 33.33%, #fff 0 66.66%, #ce1126 0);
+  
+  &::before {
+    content: "";
+    width: 25%;
+    height: 100%;
+    background: black;
+    clip-path: polygon(0 0, 100% 33.33%, 100% 66.66%, 0 100%);
+  }
+}
+
+/* TODO */
+.flag.kyrgyzstan {
+  aspect-ratio: 5 / 3;
+  background: #f00;
+  place-items: center;
+  
+  &::before {
+    content: "";
+    width: 22.5%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background: 
+      radial-gradient(farthest-side, #0000 calc(78% - 1px), #f00 78% calc(87.5% - 1px), #ff0 87.5%),
+      radial-gradient(119% 136% at 115% 135%, #0000 80%, #f00 0 83.5%,#0000 0),
+      radial-gradient(122% 136% at 110% 130%, #0000 80%, #f00 0 83.5%,#0000 0),
+      radial-gradient(125% 136% at 105% 125%, #0000 80%, #f00 0 83.5%,#0000 0),
+      radial-gradient(128% 136% at 100% 120%, #0000 80%, #f00 0 83.5%,#0000 0),
+      radial-gradient(119% 136% at -15% 135%, #0000 80%, #f00 0 83.5%,#0000 0),
+      radial-gradient(122% 136% at -10% 130%, #0000 80%, #f00 0 83.5%,#0000 0),
+      radial-gradient(125% 136% at -5% 125%, #0000 80%, #f00 0 83.5%,#0000 0),
+      radial-gradient(128% 136% at 0% 120%, #0000 80%, #f00 0 83.5%,#0000 0),
+      #ff0
+  }
+}
+
+.flag.laos {
+  aspect-ratio: 3 / 2;
+  background: 
+    radial-gradient(closest-side circle, #fff calc(40% - 1px), #fff0 40%),
+    linear-gradient(#CE1126 25%, #002868 0 75%, #CE1126 0);
+}
+
+.flag.latvia {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#9D2235 40%, #fff 0 60%, #9D2235 0);
+}
+
+/* TODO? */
+.flag.lebanon {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#D81C22 25%, #fff 0 75%, #D81C22 0);
+}
+
+/* TODO? */
+.flag.lesotho {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#00209F 30%, #fff 0 70%, #009543 0);
+}
+
+.flag.liberia {
+  aspect-ratio: 19 / 10;
+  background: repeating-linear-gradient(#bf0a30 0 calc(100% / 11), #fff 0 calc(200% / 11));
+  
+  &::before {
+    content: "";
+    position: absolute;
+    height: calc(500% / 11);
+    aspect-ratio: 1;
+    background: #002868;
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 13%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    top: 0;
+    left: 0;
+    margin: 5% 6%;
+  }
+}
+
+.flag.libya {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#e70013 25%, #000 0 75%, #239e46 0);
+  
+  &::before {
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 51.25%;
+    transform: translate(-50%, -50%);
+    width: 11%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: -0.025em 0 0 0.015em #fff
+    
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 9%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    top: 49%;
+    left: 57.5%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+  }
+}
+
+/* TODO? */
+.flag.liechtenstein {
+  aspect-ratio: 5 / 3;
+  background: linear-gradient(#002780 50%, #CF0921 0)
+}
+
+.flag.lithuania {
+  aspect-ratio: 5 / 3;
+  background: linear-gradient(#FDB913 33.33%, #006A44 0 66.66%, #C1272D 0);
+}
+
+.flag.luxembourg {
+  aspect-ratio: 5 / 3;
+  background: linear-gradient(#EF3340 33.33%, #fff 0 66.66%, #00A3E0 0);
+}
+
+.flag.madagascar {
+  aspect-ratio: 3 / 2;
+  background: conic-gradient(at 33.33% 50%, #f9423a 25%, #00843d 0 50%, white 0);
+}
+
+/* TODO */
+.flag.malawi {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#000 33.33%, #ce1126 0 66.66%, #339e35 0);
+}
+
+/* TODO */
+.flag.malaysia {
+  aspect-ratio: 2 / 1;
+  background:
+    linear-gradient(#006 0 0) 0 0 / 50% calc(800% / 14) no-repeat,
+    repeating-linear-gradient(#c00 0 calc(100% / 14), #fff 0 calc(100% / 7));
+}
+
+.flag.maldives {
+  aspect-ratio: 3 / 2;
+  box-shadow: inset 0 0 0 0.25em #D21034;
+  background:
+   radial-gradient(closest-side circle at 58.25% 50%, #007E3A calc(33.33% - 1px), #0000 33.33%), 
+    radial-gradient(closest-side circle at 54% 50%, #fff calc(33.33% - 1px), #0000 33.33%)
+    #007E3A
+    ;
+}
+
+.flag.mali {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #14B53A 33.33%, #FCD116 0 66.66%, #CE1126 0);
+}
+
+/* TODO */
+.flag.malta {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #fff 50%, #cf142b 0);
+}
+
+/* TODO */
+.flag.marshall-islands {
+  aspect-ratio: 19 / 10;
+  background:
+    conic-gradient(at -7% 102%, #0000 63.75deg, #DD7500 0 68.33deg, #fff 0 73.25deg, #0000 0),
+    #003893;
+}
+
+.flag.mauritania {
+  aspect-ratio: 3 / 2;
+  background:
+    linear-gradient(#d01c1f 20%, #0000 0 80%, #d01c1f 0),
+    radial-gradient(25.5% 32% at 50% 28%, #00a95c calc(100% - 1px), #0000), 
+    radial-gradient(25.25% 38% at 50% 32.3%, #FFD700 calc(100% - 1px), #0000), 
+    #00a95c;
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 39.5%;
+    height: 20%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #FFD700;
+  }
+}
+
+.flag.mauritius {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#EB2436 25%, #131A6D 0 50%, #FFD600 0 75%, #00A650 0);
+}
+
+/* TODO? */
+.flag.mexico {
+  aspect-ratio: 7 / 4;
+  background: linear-gradient(90deg, #006847 33.33%, #fff 0 66.66%, #CE1125 0);
+}
+
+/* TODO */
+.flag.micronesia {
+  aspect-ratio: 19 / 10;
+  background: #75b2dd;
+}
+
+/* TODO? */
+.flag.moldova {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(90deg, #0046AE 33.33%, #FFD200 0 66.66%, #CC092F 0);
+}
+
+.flag.monaco {
+  aspect-ratio: 5 / 4;
+  background: linear-gradient(#CE1126 50%, #fff 0);
+}
+
+/* TODO */
+.flag.mongolia {
+  aspect-ratio: 2 / 1;
+  background: 
+    linear-gradient(90deg, #DA2032 33.33%, #0066B3 0 66.66%, #DA2032 0);
+}
+
+/* TODO? */
+.flag.montenegro {
+  aspect-ratio: 2 / 1;
+  box-shadow: inset 0 0 0 0.05em #FFC000;
+  background: 
+    #E30000;
+}
+
+/* TODO */
+.flag.morocco {
+  aspect-ratio: 3 / 2;
+  background: #c1272d;
+}
+
+/* TODO? */
+.flag.mozambique {
+  aspect-ratio: 3 / 2;
+  background:
+    conic-gradient(at 43.75% 50%, #0000 232.75deg, #d21034 0 307.25deg, #0000 0),
+    linear-gradient(#007168 31.25%, #fff 0 34.375%, #000 0 65.625%, #fff 0 68.75%, #fce100 0)
+}
+
+.flag.myanmar {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#FECB00 33.33%, #34B233 0 66.66%, #EA2839 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    width: 47%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+  }
+}
+
+/* TODO */
+.flag.namibia {
+  aspect-ratio: 3 / 2;
+  background:
+   linear-gradient(to bottom right, #002F6C 40%, #fff 0 42.5%, #C8102E 0 57.5%, #fff 0 60%, #009A44 0);
+}
+
+.flag.nauru {
+  aspect-ratio: 2 / 1;
+  background:
+    linear-gradient(#ffc72c 0 0) 0 50% / 100% 8.333% no-repeat,
+    #012169;
+  
+    
+  &::before {
+    content: "";
+    inset: 0;
+    clip-path: polygon(24.96% 54.45%, 25.04% 54.45%, 26.05% 62.81%, 29.10% 56.64%, 27.93% 64.92%, 32.15% 62.58%, 29.02% 68.75%, 33.24% 70.86%, 29.02% 72.97%, 32.11% 79.06%, 27.93% 76.72%, 29.10% 85.08%, 26.05% 78.91%, 25.00% 87.27%, 23.95% 78.91%, 20.90% 85.08%, 22.07% 76.72%, 17.89% 79.06%, 20.98% 72.97%, 16.76% 70.78%, 20.98% 68.75%, 17.85% 62.58%, 22.07% 64.92%, 20.90% 56.64%, 23.95% 62.81%, 24.96% 54.45%);
+    background: #fff;
+  }
+}
+
+.flag.nepal {
+  --b: #003893;
+  --r: #dc143c;
+  aspect-ratio: 774 / 943;
+  background: 
+    radial-gradient(farthest-side at 50% 0, var(--r) calc(100% - 1px), #0000) 10.66% 33% / 0.29em 0.125em,
+    radial-gradient(farthest-side at 50% 0, #fff calc(100% - 1px), #0000) 11.3% 37% / 0.28em 0.145em,
+    linear-gradient(to top right, var(--r) calc(50% - 1px), #0000 50%) 0.03em 0.05em / 84.25% 43.5% no-repeat,
+    linear-gradient(to top right, var(--r) calc(50% - 1px), #0000 50%) 0.03em calc(100% - 0.03em) / 84% 69% no-repeat,
+    linear-gradient(var(--b) 0 0),
+    linear-gradient(#ff06 0 0);
+  background-repeaT: no-repeat;
+  mask: 
+    linear-gradient(to top right, #f00 calc(50% - 1px), #0000 50%) 0 0 / 100% 51.25% no-repeat,
+    linear-gradient(to top right, #f00 calc(50% - 1px), #0000 50%) 0 100% / 96% 79% no-repeat;
+  
+  
+  &::before, &::after {
+    content:"";
+    position: absolute;
+    inset: 0;
+    clip-path: polygon(22.46% 29.99%, 24.61% 32.27%, 26.64% 29.99%, 27.46% 32.75%, 30.55% 31.30%, 30.00% 34.12%, 33.48% 33.74%, 31.72% 36.21%, 35.08% 36.91%, 32.31% 38.62%, 33.76% 39.50%, 33.71% 41.49%, 15.70% 42.04%, 15.35% 39.51%, 16.80% 38.67%, 14.06% 36.91%, 17.42% 36.21%, 15.62% 33.74%, 19.10% 34.12%, 18.59% 31.30%, 21.68% 32.75%, 22.46% 29.99%);
+    background: #fff;
+  }
+  
+  &::after {
+    clip-path: polygon( 24.53% 58.03%, 27.50% 63.70%, 33.52% 60.01%, 32.62% 66.10%, 40.08% 65.36%, 35.59% 70.33%, 42.50% 72.73%, 35.59% 75.10%, 40.08% 80.07%, 32.62% 79.33%, 33.52% 85.45%, 27.50% 81.74%, 24.61% 87.41%, 21.64% 81.74%, 15.59% 85.45%, 16.52% 79.33%, 09.06% 80.07%, 13.55% 75.14%, 06.64% 72.70%, 13.55% 70.33%, 09.06% 65.36%, 16.52% 66.10%, 15.59% 59.98%, 21.64% 63.70%, 24.53% 58.03%);
+  }
+}
+
+.flag.netherlands {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#AD1D25 33.33%, #fff 0 66.66%, #1E4785 0);
+}
+
+/* TODO */
+.flag.new-zealand {
+  aspect-ratio: 2 / 1;
+  background: #012169;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    background:
+      linear-gradient(#C8102E 0 0) 50% 0 / 10% 100%, 
+      linear-gradient(#C8102E 0 0) 0 50% / 100% 20%, 
+      linear-gradient(#fff 0 0) 50% 0 / 16.66% 100%, 
+      linear-gradient(#fff 0 0) 0 50% / 100% 33.33%, 
+      linear-gradient(to top right, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 0 / 50% 50%,
+      linear-gradient(to bottom right, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 0 / 50% 50%,
+      linear-gradient(to top left, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 100% / 50% 50%,
+      linear-gradient(to bottom left, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 100% / 50% 50%,
+      linear-gradient(to top right, #0000 44.5%, #fff 0 55.5%, #0000 0),
+      linear-gradient(to top left, #0000 44.5%, #fff 0 55.5%, #0000 0),
+      #012169
+      ;
+    background-repeat: no-repeat;
+  }
+}
+
+/* TODO? */
+.flag.nicaragua {
+  aspect-ratio: 5 / 3;
+  background: linear-gradient(#0067c6 33.33%, #fff 0 66.66%, #0067c6 0);
+}
+
+.flag.niger {
+  aspect-ratio: 7 / 6;
+  background:
+    radial-gradient(closest-side circle, #e05206 calc(28.333% - 1px), #0000 28.333%),
+    linear-gradient(#e05206 33.33%, #fff 0 66.66%, #0DB02B 0);
+}
+
+.flag.nigeria {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(90deg, #008751 33.33%, #fff 0 66.66%, #008751 0);
+}
+
+.flag.north-korea {
+  aspect-ratio: 2 / 1;
+  background:
+    radial-gradient(closest-side circle at 33.33% 50%, #fff calc(44.44% - 1px), #0000 44.44%),
+    linear-gradient(#024FA2 16.66%, #fff 0 19.44%, #ED1C27 0 80.56%, #fff 0 83.33%, #024FA2 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 33.33%;
+    top: 47.75%;
+    height: 38.5%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #ED1C27;
+  }
+}
+
+/* TODO? */
+.flag.north-macedonia {
+  aspect-ratio: 2 / 1;
+  background:
+    radial-gradient(closest-side circle, #F9D616 calc(28.6% - 1px), #CE2028 28.6% calc(35.75% - 1px), #0000 35.75%),
+    conic-gradient(at 45% 44%, #0000 117deg, #F9D616 0 125deg, #0000 0),
+    conic-gradient(at 55% 44%, #0000 235deg, #F9D616 0 243deg, #0000 0),
+    conic-gradient(at 45% 56%, #0000 55deg, #F9D616 0 63deg, #0000 0),
+    conic-gradient(at 55% 56%, #0000 297deg, #F9D616 0 305deg, #0000 0),
+    repeating-conic-gradient(#0000 0 84.25deg, #F9D616 84.25deg 95.75deg, #0000 0 180deg),
+    conic-gradient(from 345.75deg at 50% 100%, #F9D616 28.5deg, #0000 0 ) 50% 0 / 10% 39.5%,
+    conic-gradient(from 165.75deg at 50% 0%, #F9D616 28.5deg, #0000 0 ) 50% 100% / 10% 39.5%,
+    #CE2028;
+  background-repeat: no-repeat;
+}
+
+.flag.norway {
+  aspect-ratio: 11 / 8;
+  background:
+    linear-gradient(#00205B 0 0) 0 50% / 100% 12.5%,
+    linear-gradient(#00205B 0 0) 0.4375em 50% / 9.0909% 100%,
+    linear-gradient(#fff 0 0) 0 50% / 100% 25%,
+    linear-gradient(#fff 0 0) 0.375em 50% / 18.1818% 100%,
+    #BA0C2F
+    ;
+  background-repeat: no-repeat;
+}
+
+/* TODO? */
+.flag.oman {
+  aspect-ratio: 7 / 4;
+  background:
+    linear-gradient(90deg, #df1a23 33.33%, #0000 0),
+    linear-gradient(#fff 33.33%, #df1a23 0 66.66%, #007e3c 0);
+}
+
+.flag.pakistan {
+  aspect-ratio: 3 / 2;
+  background:
+    radial-gradient(closest-side circle at 67.6% 43.25%, #01411C calc(63.5% - 1px), #0000 63.5%),
+    radial-gradient(closest-side circle at 62.4% 50.1%, #fff calc(60% - 1px), #0000 60%),
+    linear-gradient(90deg, #fff 25%, #01411C 0);
+  
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 65.75%;
+    top: 26.75%;
+    height: 18.5%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    transform: rotate(-23deg);
+  }
+}
+
+.flag.palau {
+  aspect-ratio: 8 / 5;
+  background: radial-gradient(closest-side circle at 43.75% 50%, #ff0 calc(60% - 1px), #0099FF 60%);
+}
+
+.flag.panama {
+  aspect-ratio: 3 / 2;
+  background: conic-gradient(#c8102e 25%, #fff 0 50%, #005eb8 0 75%, #fff 0);
+  
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 18%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #005eb8;
+    top: 25%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &::after {
+    top: 75%;
+    left: 75%;
+    background: #c8102e;
+  }
+}
+
+/* TODO? */
+.flag.papua-new-guinea {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(to top right, #000 calc(50% - 0.5px), #ce1126 calc(50% + 0.5px));
+}
+
+/* TODO? */
+.flag.paraguay {
+  aspect-ratio: 20 / 11;
+  background: linear-gradient(#d52b1e 33.33%, #fff 0 66.66%, #0038a8 0);
+}
+
+.flag.peru {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #D91023 33.33%, #fff 0 66.66%, #D91023 0);
+}
+
+/* TODO */
+.flag.philippines {
+  aspect-ratio: 2 / 1;
+  background: conic-gradient(from 90deg at 43.3% 50%, #CE1126 150deg, #fff 0 210deg, #0038A8 0);
+}
+
+.flag.poland {
+  background: linear-gradient(white 50%, red 50%);
+  aspect-ratio: 8 / 5;
+}
+
+/* TODO? */
+.flag.portugal {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #006600 40%, #FF0000 0);
+}
+
+.flag.qatar {
+  aspect-ratio: 28 / 11;
+  background: conic-gradient(from 249deg at 37.5% 50%, #fff 42deg, #8A1538 0);
+  background-size: 100% calc(100% / 9);
+  bacgkround: #8A1538;
+  position: relative;
+  
+  /* makes it look nicer than the conic gradient */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: white;
+    clip-path: polygon(
+      0 0, 29.16% 0, 37.5%  5.55%, 
+      29.16% 11.11%, 37.5% 16.66%, 
+      29.16% 22.22%, 37.5% 27.77%, 
+      29.16% 33.33%, 37.5% 38.88%, 
+      29.16% 44.44%, 37.5% 50.00%, 
+      29.16% 55.55%, 37.5% 61.11%, 
+      29.16% 66.66%, 37.5% 72.22%, 
+      29.16% 77.77%, 37.5% 83.33%, 
+      29.16% 88.88%, 37.5% 94.44%, 29.16% 100%, 0 100%);
+  }
+}
+
+.flag.republic-of-the-congo {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(135deg, #009543 40%, #FBDE4A 0 60%, #DC241F 0);
+}
+
+.flag.romania {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #002B7F 33.33%, #FCD116 0 66.66%, #CE1126 0);
+}
+
+.flag.russia {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#fff 33.33%, #0036A7 0 66.66%, #D62718 0);
+}
+
+/* TODO */
+.flag.rwanda {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#00a3e0 50%, #fad201 0 75%, #20603d 0);
+}
+
+.flag.saint-kitts-and-nevis {
+  aspect-ratio: 3 / 2;
+  background: 
+   linear-gradient(to bottom right, #009739 37.5%, #ffcd00 0 41%, #000 0 59%, #ffcd00 0 62.5%, #c8102e 0);
+  
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 18%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    top: 69.25%;
+    left: 30.75%;
+    transform: translate(-50%, -50%) rotate(-33.33deg);
+  }
+  
+  &::after {
+    top: 31%;
+    left: 69.25%;
+  }
+}
+
+.flag.saint-lucia {
+  aspect-ratio: 2 / 1;
+  background: #6cF;
+  
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 33.33%;
+    height: 41.2%;
+    background: #fcd116;
+    bottom: 8.66%;
+    left: 50%;
+    transform: translate(-50%);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    height: 82.68%;
+    background: #00f5;
+    background:
+      linear-gradient(to bottom right, #fff calc(56.75% - 1px), #000 56.75%) 0 0 / 50% 100% no-repeat,
+      linear-gradient(to bottom left, #fff calc(56.75% - 1px), #000 56.75%) 100% 0 / 50% 100% no-repeat,
+      linear-gradient(#fff 14%, #000 0) 50% 50% / 5% 100% no-repeat;
+      
+  }
+}
+
+.flag.saint-vincent-grenadines {
+  aspect-ratio: 3 / 2;
+  background: 
+    linear-gradient(90deg, #002674 25%, #fcd022 0 75%, #007c2e 0); 
+  background-repeat: no-repeat;
+  
+  &::before, &::after {
+    content: "";
+    width: 13%;
+    height: 33.33%;
+    background: #0005;
+    position: absolute;
+    top: 68%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background:
+      conic-gradient(at 50% 0, #0000 0 150deg, #007c2e 0 210deg, #0000 0) 0 0 / 100% calc(50% + 0.5px),
+      conic-gradient(at 50% 100%, #007c2e 0 30deg, #0000 0 330deg, #007c2e 0) 0 100% / 100% calc(50% + 0.5px);
+    background-repeat: no-repeat;
+  }
+  
+  &::before {
+    top: 49%;
+    left: 42.5%;
+    filter: drop-shadow(0.225em 0 #007c2e)
+  }
+}
+
+/* TODO */
+.flag.samoa {
+  aspect-ratio: 2 / 1;
+  background: conic-gradient(#ce1126 75%, #002b7f 0)
+}
+
+.flag.san-marino {
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(#fff 50%, #5eb6e4 0);
+}
+
+.flag.sao-tome-and-principe {
+  aspect-ratio: 2 / 1;
+  background: 
+    conic-gradient(from 225deg at 25% 50%, #ef3340 90deg, #0000 0),
+    linear-gradient(#009739 33.33%, #ffd100 0 66.66%, #009739 0);
+  
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 16.5%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &::after {
+    left: 75%;
+  }
+}
+
+/* TODO? */
+.flag.saudi-arabia {
+  aspect-ratio: 3 / 2;
+  background: #005430;
+}
+
+.flag.senegal {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(90deg, #00853f 33.33%, #fdef42 0 66.66%, #e31b23 0);
+  
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #00853f;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.flag.serbia {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#C7363D 33.33%, #0C4077 0 66.66%, #fff 0);
+}
+
+.flag.seychelles {
+  aspect-ratio: 2 / 1;
+  background: conic-gradient(at 0 100%, #002F6C 33.7deg, #FED141 0 53.2deg, #D92323 0 71.6deg, #fff 0 80.5deg, #007A33 0);
+  background:
+    linear-gradient(to top left, #0000 calc(50% - 1px), #002F6C 50%) 0 0 / 33.33% 100%,
+    linear-gradient(to top left, #0000 calc(50% - 1px), #FED141 50%) 0 0 / 66.66% 100%,
+    linear-gradient(to bottom right, #0000 calc(50% - 1px), #007A33 50%) 0 100% / 100% 33.33%,
+    linear-gradient(to bottom right, #0000 calc(50% - 1px), #fff 50%) 0 100% / 100% 66.66%,
+    #D92323
+    ;
+  background-repeat: no-repeat;
+}
+
+.flag.sierra-leone {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#1eb53a 33.33%, #fff 0 66.66%, #0072c6 0)
+}
+
+/* TODO */
+.flag.singapore {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#EE2536 50%, #fff 0);
+}
+
+/* TODO */
+.flag.slovakia {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#fff 33.33%, #0B4EA2 0 66.66%, #EE1C25 0)
+}
+
+/* TODO? */
+.flag.slovenia {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#fff 33.33%, #00f 0 66.66%, #f00 0)
+}
+
+/* TODO */
+.flag.solomon-islands {
+  aspect-ratio: 2 / 1;
+  background:
+    linear-gradient(to bottom right, #0051ba 47.5%, #fcd116 0 52.5%, #215b33 0);
+}
+
+.flag.somalia {
+  aspect-ratio: 3 / 2;
+  background: #418FDE;
+  place-items: center;
+  
+  &::before {
+    content: "";
+    width: 33.33%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    margin-top: -2%;
+  }
+}
+
+.flag.south-africa {
+  aspect-ratio: 3 / 2;
+  background:
+    conic-gradient(from 236.25deg at 30% 50%, #000 67.5deg, #0000 0),
+    conic-gradient(from 236.25deg at 38% 50%, #FFB612 67.5deg, #0000 0),
+    conic-gradient(from 236.25deg at 62% 50%, #007A4D 67.5deg, #0000 0),
+    linear-gradient(#007A4D 0 0) 50% 50% / 100% 20%,
+    conic-gradient(from 236.25deg at 70% 50%, #fff 67.5deg, #0000 0),
+    linear-gradient(#DE3831 33.33%, #fff 0 66.66%, #002395 0)
+    ;
+  background-repeat: no-repeat;
+}
+
+.flag.south-korea {
+  aspect-ratio: 3 / 2;
+  background: 
+    radial-gradient(closest-side circle, #0000 calc(50% - 1px), #fff 50%),
+    radial-gradient(closest-side circle at 43.25% 42.75%, #CD2E3A calc(29.75% - 1px), #0000 29.75%),
+    radial-gradient(closest-side circle at 56.9% 57.25%, #0047A0 calc(29.75% - 1px), #0000 29.75%),
+    linear-gradient(to top right, #0047A0 50%, #CD2E3A 0)
+    ;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    width: 72.5%;
+    height: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(33.5deg);
+    background: 
+      repeating-linear-gradient(90deg, #000 0 25%, #0000 0 37.5%) 0 0 / 15.5% 100%,
+      linear-gradient(#fff 0 0) 106% 50% / 25% 10%,
+      repeating-linear-gradient(90deg, #000 0 25%, #0000 0 37.5%) 100% 0 / 15.5% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 72.5%;
+    height: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-33.5deg);
+    background: 
+      linear-gradient(#fff 0 0) 105% 50% / 10% 10%,
+      linear-gradient(#fff 0 0) 88% 50% / 10% 10%,
+      repeating-linear-gradient(90deg, #000 0 25%, #0000 0 37.5%) 0 0 / 15.5% 100%,
+       linear-gradient(#fff 0 0) 5% 50% / 6% 10%,
+      repeating-linear-gradient(90deg, #000 0 25%, #0000 0 37.5%) 100% 0 / 15.5% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.flag.south-sudan {
+  aspect-ratio: 2 / 1;
+  background: 
+    linear-gradient(#000 30%, #fff 0 35%, #E22028 0 65%, #fff 0 70%, #00914C 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #00B6F2;
+    clip-path: polygon(0 0, 43.25% 50%, 0 100%);
+  }
+  
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 15.75%;
+    top: 48.5%;
+    left: 14.5%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #FFE51A;
+  }
+}
+
+.flag.spain {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#AD1519 25%, #FABD00 0 75%, #AD1519 0);
+}
+
+/* TODO? */
+.flag.sri-lanka {
+  aspect-ratio: 2 / 1;
+  box-shadow: inset 0 0 0 0.0925em #F7B718;
+  background:
+    linear-gradient(90deg, #005F56 17.75%, #DF7500 0 30.75%, #F7B718 0 35.4%, #941E32 0);
+}
+
+.flag.sudan {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#D21034 33.33%, #fff 0 66.66%, #000 0);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    width: 33.33%;
+    height: 100%;
+    background: #007229;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+}
+
+.flag.suriname {
+  aspect-ratio: 3 / 2;
+  background:
+    linear-gradient(#377e3f 20%, #fff 0 30%, #b40a2d 0 70%, #fff 0 80%, #377e3f 0);
+  
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 32.4%;
+    top: 50%;
+    left: 50%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #ecc81d;
+  }
+}
+
+.flag.sweden {
+  aspect-ratio: 8 / 5;
+  background:
+    linear-gradient(#0000 0.4em, #ffcd00 0 0.6em, #0000 0),
+    linear-gradient(90deg, #005293 0.5em, #ffcd00 0 0.7em, #005293 0),
+    #005293;
+}
+
+.flag.switzerland {
+  aspect-ratio: 1 / 1;
+  background: 
+    linear-gradient(#fff 0 0) 50% 50% / 62.5% 20.83% no-repeat,
+    linear-gradient(#fff 0 0) 50% 50% / 20.83% 62.5% no-repeat,
+    #da291c;
+}
+
+.flag.syria.old {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#CE1126 33.33%, #fff 0 66.66%, #000 0);
+  
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    width: 17.5%;
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #007A3D;
+    top: 50%;
+    left: 33.33%;
+    transform: translate(-50%, -50%);
+  }
+  
+  &::after {
+    left: 66.66%;
+  }
+}
+
+.flag.syria {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#007A3D 33.33%, #fff 0 66.66%, #000 0);
+  
+  &::before, &::after {
+    content: "";
+    position: absolute;
+    clip-path: polygon(33.71% 47.04%, 27.11% 47.04%, 24.96% 37.55%, 22.93% 47.04%, 16.37% 47.04%, 21.64% 52.96%, 19.57% 62.45%, 25.00% 56.65%, 30.43% 62.45%, 28.36% 52.96%, 33.71% 47.04%, 41.33% 47.04%, 47.93% 47.04%, 49.96% 37.55%, 52.07% 47.04%, 58.75% 47.04%, 53.36% 52.96%, 55.39% 62.45%, 50.00% 56.65%, 44.57% 62.45%, 46.64% 52.96%, 41.37% 47.04%);
+    background: #CE1126;
+    inset: 0;
+  }
+  
+  &::after {
+    clip-path: polygon(66.29% 47.04%, 72.93% 47.04%, 75.00% 37.55%, 77.07% 47.04%, 83.75% 47.04%, 78.36% 53.00%, 80.39% 62.45%, 75.00% 56.65%, 69.57% 62.45%, 71.64% 53.00%, 66.45% 47.04%); 
+  }
+}
+
+/* TODO? */
+.flag.tajikistan {
+  aspect-ratio: 2 / 1;
+  background: linear-gradient(#c00 28.5%, #fff 0 71.5%, #060 0);
+}
+
+.flag.tanzania {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(to bottom right, #1eb53a 38%, #fcd116 0 42%, #000 0 58%, #fcd116 0 62%, #00a3dd 0);
+}
+
+.flag.thailand {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#A51931 16.66%, #fff 0 33.33%, #2D2A4A 0 66.66%, #fff 0 83.33%, #A51931 0);
+}
+
+.flag.togo {
+  aspect-ratio: 5 / 3;
+  background: repeating-linear-gradient(#006A4E 0 20%, #FFCE00 0 40%);
+  
+  &::before {
+    content: "";
+    height: 60%;
+    position: absolute;
+    aspect-ratio: 1;
+    background: #D21034;
+  }
+  
+  &::after {
+    content: "";
+    width: 20%;
+    position: absolute;
+    left: 18%;
+    top: 32%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+    margin-top: -2%;
+  }
+}
+
+.flag.tonga {
+  aspect-ratio: 2 / 1;
+  background: conic-gradient(at 41.66% 50%, #C10000 75%, #fff 0);
+  
+  &::before {
+    content: "";
+    width: 18.75%;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 20.8333%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    background: 
+      linear-gradient(#0000 33.33%, #C10000 0 66.66%, #0000 0),
+      linear-gradient(90deg, #0000 33.33%, #C10000 0 66.66%, #0000 0);
+  }
+}
+
+.flag.trinidad-and-tobago {
+  aspect-ratio: 5 / 3;
+  overflow: clip;
+  background: #da1a35;
+
+  &::before {
+    content: "";
+    width: 200%;
+    height: 33.3333%;
+    background: #0045;
+    transform-origin: 0 100%;
+    transform: translate(0, -100%) rotate(40.83871deg);
+    background: linear-gradient(#fff 16.66%, #000 calc(16.66% + 1px) calc(83.33% - 1px),  #fff 83.33%)
+  }
+}
+
+.flag.tunisia {
+  aspect-ratio: 3 / 2;
+  background: 
+    radial-gradient(closest-side circle at 53.333% 50%, #fff calc(30% - 1px), #0000 30%),
+    radial-gradient(closest-side circle, #e70013 calc(37.5% - 1px), #fff 37.5% calc(50% - 1px), #e70013 50%);
+  
+  &::after {
+    content: "";
+    width: 14%;
+    position: absolute;
+    left: 53.2%;
+    top: 49%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #e70013;
+  }
+}
+
+.flag.turkey {
+  aspect-ratio: 3 / 2;
+  background: 
+    radial-gradient(closest-side circle at 37.5% 50%, #E30A17 calc(40% - 1px), #0000 40%),
+    radial-gradient(closest-side circle at 33.33% 50%, #fff 37.5% calc(50% - 1px), #E30A17 50%);
+  
+  &::after {
+    content: "";
+    width: 16%;
+    position: absolute;
+    left: 54.5%;
+    top: 49%;
+    transform: translate(-50%, -50%) rotate(-18deg);
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #fff;
+  }
+}
+
+/* TODO? */
+.flag.turkmenistan {
+  aspect-ratio: 3 / 2;
+  background: #00853A;
+}
+
+/* TODO */
+.flag.tuvalu {
+  aspect-ratio: 2 / 1;
+  background: #009cde;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 50%;
+    height: 50%;
+    background:
+      linear-gradient(#C8102E 0 0) 50% 0 / 10% 100%, 
+      linear-gradient(#C8102E 0 0) 0 50% / 100% 20%, 
+      linear-gradient(#fff 0 0) 50% 0 / 16.66% 100%, 
+      linear-gradient(#fff 0 0) 0 50% / 100% 33.33%, 
+      linear-gradient(to top right, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 0 / 50% 50%,
+      linear-gradient(to bottom right, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 0 / 50% 50%,
+      linear-gradient(to top left, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 100% / 50% 50%,
+      linear-gradient(to bottom left, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 100% / 50% 50%,
+      linear-gradient(to top right, #0000 44.5%, #fff 0 55.5%, #0000 0),
+      linear-gradient(to top left, #0000 44.5%, #fff 0 55.5%, #0000 0),
+      #00008B
+      ;
+    background-repeat: no-repeat;
+  }
+}
+
+.flag.united-arab-emirates {
+  aspect-ratio: 2 / 1;
+  background:
+    linear-gradient(#f00 0 0) 0 0 / 25% 100% no-repeat,
+    linear-gradient(#00843D 33.33%, #fff 0 66.66%, #000 0);
+}
+
+.flag.united-kingdom {
+  aspect-ratio: 2 / 1;
+  background:
+    linear-gradient(#C8102E 0 0) 50% 0 / 10% 100%, 
+    linear-gradient(#C8102E 0 0) 0 50% / 100% 20%, 
+    linear-gradient(#fff 0 0) 50% 0 / 16.66% 100%, 
+    linear-gradient(#fff 0 0) 0 50% / 100% 33.33%, 
+    linear-gradient(to top right, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 0 / 50% 50%,
+    linear-gradient(to bottom right, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 0 / 50% 50%,
+    linear-gradient(to top left, #0000 42.5%, #C8102E 0 50%, #0000 0) 0 100% / 50% 50%,
+    linear-gradient(to bottom left, #0000 42.5%, #C8102E 0 50%, #0000 0) 100% 100% / 50% 50%,
+    linear-gradient(to top right, #0000 44.5%, #fff 0 55.5%, #0000 0),
+    linear-gradient(to top left, #0000 44.5%, #fff 0 55.5%, #0000 0),
+    #012169
+    ;
+  background-repeat: no-repeat;
+  
+}
+
+/* TODO */
+.flag.united-states {
+  aspect-ratio: 19 / 10;
+  background:
+    linear-gradient(#0a3161 0 0) 0 0 / 40% calc(700% / 13) no-repeat,
+    repeating-linear-gradient(#b31942 0 calc(100% / 13), #fff 0 calc(200% / 13));
+    ;
+  background-repeat: no-repeat;
+}
+
+/* TODO? */
+.flag.uganda {
+  aspect-ratio: 3 / 2;
+  background: 
+    radial-gradient(closest-side circle, #fff calc(30% - 1px), #0000 30%),
+    repeating-linear-gradient(#000 0 16.666%, #fcdc04 0 33.333%, #d90000 0 50%);
+}
+
+.flag.ukraine {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#0066CC 50%, #FFCC00 0);
+}
+
+/* TODO? */
+.flag.uruguay {
+  aspect-ratio: 3 / 2;
+  background: 
+    linear-gradient(#fff 0 0) 0 0 / calc(1000% / 27) calc(500% / 9 - 1px) no-repeat,
+    repeating-linear-gradient(#fff 0 calc(100% / 9), #0038a8 0 calc(200% / 9));
+}
+
+/* TODO */
+.flag.uzbekistan {
+  aspect-ratio: 2 / 1;
+  background: 
+    linear-gradient(#fff 0 0) 0 50% / 100% 32% no-repeat,
+    linear-gradient(#0099b5 32%, #ce1126 0 68%, #1eb53a 0)
+}
+
+/* TODO? */
+.flag.vanuatu {
+  aspect-ratio: 3 / 2;
+  background:
+    radial-gradient(closest-side circle at 13.5% 47.5%, #000 calc(39% - 1px), #0000 39%),
+    radial-gradient(closest-side circle at 12.75% 49%, #fdce12 calc(48% - 1px), #0000 48%),
+    radial-gradient(13% 20%  at 13.5% 49.5%, #000 calc(50% - 1px), #0000 50%),
+    radial-gradient(14.4% 20% at 14.4% 47%, #fdce12 calc(60% - 1px), #0000 60%),
+    linear-gradient(#000 0 0) 0 50% / 13.5% 40% no-repeat,
+    radial-gradient(15% 25% at 14.4% 50%, #fdce12 calc(60% - 1px), #0000 60%),
+    conic-gradient(from 242.75deg at 48% 50%, #000 54.5deg, #0000 0),
+    conic-gradient(from 242.75deg at 55.5% 50%, #fdce12 54.5deg, #0000 0),
+    linear-gradient(#000 33.33%, #fdce12 0 66.66%, #000 0) 0 50% / 100% 17.5% no-repeat,
+    conic-gradient(from 242.75deg at 64.5% 50%, #000 54.5deg, #0000 0),
+    linear-gradient(#d21034 50%, #009543 0),
+    #0000
+    ;
+}
+
+.flag.vatican-city {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(90deg, #fff200 50%, #fff 0);
+}
+
+/* TODO */
+.flag.venezuela {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#fc0 33.33%, #00247d 0 66.66%, #cf142b 0);
+}
+
+.flag.vietnam {
+  aspect-ratio: 3 / 2;
+  background: #DA251D;
+  
+  &::after {
+    content: "";
+    width: 38.25%;
+    position: absolute;
+    left: 50%;
+    top: 50.25%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #FFFF00;
+    margin-top: -2%;
+  }
+}
+
+.flag.yemen {
+  aspect-ratio: 3 / 2;
+  background: linear-gradient(#CE1126 33.33%, #fff 0 66.66%, #000 0);
+}
+
+/* TODO? */
+.flag.zambia {
+  aspect-ratio: 3 / 2;
+  background:
+    linear-gradient(90deg, #EF3340 33.33%, #000 0 66.66%, #FCAD56 0) 100% 100% / 35.71% 64.28% no-repeat,
+    #009E49;
+}
+
+/* TODO? */
+.flag.zimbabwe {
+  aspect-ratio: 2 / 1;
+  background:
+    conic-gradient(from 231.5deg at 29.5% 50%, #fff 77deg, #0000 0),
+    conic-gradient(from 231.5deg at 31.34% 50%, #000 77deg, #0000 0),
+    linear-gradient(#000 0 0) 0 50% / 100% calc(100% / 7),
+    linear-gradient(#d40000 0 0) 0 50% / 100% calc(300% / 7),
+    linear-gradient(#ffd200 0 0) 0 50% / 100% calc(500% / 7),
+    #006400
+    ;
+  background-repeat: no-repeat;
+  
+  &::after {
+    content: "";
+    width: 19.5%;
+    position: absolute;
+    left: 11.25%;
+    top: 48.75%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 153 / 145;
+    clip-path: polygon(50% 0%, 62% 38%, 100% 38%, 69% 62%, 81% 100%, 50% 76%, 19% 100%, 31% 62%, 0% 38%, 38% 38%, 50% 0%);
+    background: #d40000;
+    margin-top: -2%;
+  }
+}
